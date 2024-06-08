@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A5/1 Shifrlash Algoritmi</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center mb-4">A5/1 Oqimli Shifrlash Algoritmi</h1>
+        <div class="card shadow-lg">
+            <div class="card-body">
+                <form>
+                    <div class="form-group">
+                        <label for="inputKey">Kalit:</label>
+                        <input type="text" class="form-control" id="inputKey" placeholder="Kalit (8 ta belgi)" maxlength="8">
+                    </div>
+                    <div class="form-group">
+                        <label for="inputText">Matnni kiriting (2-lik ko'rinishda):</label>
+                        <textarea class="form-control" id="inputText" placeholder="Matn (2-lik)" rows="3"></textarea>
+                    </div>
+                    <button type="button" class="btn btn-primary btn-block" onclick="encrypt()">Shifrlash</button>
+                </form>
+                <div class="mt-4">
+                    <h2>Natijalar:</h2>
+                    <p><strong>Shifrlangan matn:</strong></p>
+                    <p id="encryptedText" class="bg-light p-3 border rounded"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
